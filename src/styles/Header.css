@@ -1,0 +1,39 @@
+.navbar{
+  position: fixed;
+  background-image: url('../images/roseBG.png');
+  background-size: contain;
+  height: 15em;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  float:none;
+  display:inline-block;
+
+}
+
+.navbar-brand{
+  position: relative;
+  font-size: 5em;
+  color:gold;
+  font-family: 'Great Vibes', cursive;
+/* font-family: 'Parisienne', cursive; */
+  bottom: 20%;
+  /* font-weight: bolder */
+  /* left: 30% */
+}
+
+.navbar-brand:hover{
+  color: gold;
+}
+
+.collapse{
+  position: relative;
+  bottom: 13%;
+}
+.score{
+  position: relative;
+  color:white;
+  padding-right: 5%;
+  font-size: 1.7em;
+  left: 40%;
+}
