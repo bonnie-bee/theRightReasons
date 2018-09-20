@@ -15,34 +15,46 @@ class App extends Component {
     clicked: []
   };
 
+  topScores = () => {
+    let topScore = this.state.topScore;
+    let score = this.state.score;
+    console.log("hello");
+    if(topScore<=score){
+      topScore++
+      this.setState({
+        topScore
+      })} else {
+        return;
+      }
+  };
+
+  //function that passes in the id of the bachelor image the user clicks
   clickBachelor = id => {
+
+    //shuffle the bachelor cards each time you click one
+    let bachelors = this.state.bachelors
+      bachelors.sort(() => Math.random() - 0.5);
+
+    //set the array of clicked bachelors
     let clicked = this.state.clicked;
-    // const bachelors = this.state.bachelors.map(bachelor => this.state.bachelors[Math.floor(Math.random() * this.state.bachelors.length)]);
-    console.log(clicked);
-    console.log(id);
-    
-    if(clicked.includes(id)){
-      let score = this.state.score;
+    let score = this.state.score
+
+    //checks to see if the bachelor id is in the clicked array
+    if(clicked.includes(id)){ //if in array then reset game
       score = 0;
       clicked = [];
       this.setState({ 
-        // bachelors,
         score,
         clicked})
-    } else {
+    } else { //if not in array then push id to clicked array and update the score
       clicked.push(id)
-      let score = this.state.score+1;
+      score++
+      this.topScores();
       this.setState({ 
-        // bachelors,
         score})
     }
-    // let topScore = this.state.topScore;
-    // if(this.state.topScore<score){
-    //   return topScore+1
-    // } else {
-    //   return topScore
-    // }
-  }
+  };
+
 
 
   render() {
