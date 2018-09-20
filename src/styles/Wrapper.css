@@ -13,3 +13,31 @@
   cursor: url('../images/kiss-lips.png'), auto;
   
 }
+
+@media only screen and (min-width: 315px) {
+  .wrapper{
+    margin-top: 105%;
+
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .wrapper{
+    margin-top: 70%;
+
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .wrapper{
+    margin-top: 40%;
+
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .wrapper{
+    margin-top: 0
+
+  }
+}

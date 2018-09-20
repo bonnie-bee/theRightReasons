@@ -5,3 +5,10 @@
     background-color: black;
     color: white
 }
+
+@media only screen and (max-width: 768px) {
+/* .jumbotron{
+    position: relative;
+    margin-top: 12%;
+} */
+}
