@@ -6,9 +6,23 @@
     color: white
 }
 
-@media only screen and (max-width: 768px) {
-/* .jumbotron{
-    position: relative;
-    margin-top: 12%;
-} */
+@media only screen and (min-width: 200px) {
+    .jumbotron{
+        position: relative;
+        margin-top: 14.5%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .jumbotron{
+        position: relative;
+        margin-top: 11%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .jumbotron{
+        position: relative;
+        margin-top: 9%;
+    }
 }

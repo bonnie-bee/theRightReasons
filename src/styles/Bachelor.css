@@ -16,9 +16,34 @@ background: #fff;
     overflow: hidden;
     text-align: center;
     background:#6CADDC;
-  }
-  .card > .img-container > img {
-    width: 100%;
-    overflow: hidden;
+}
 
+.card > .img-container > img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  height: 100%;
+
+}
+
+@media only screen and (min-width: 215px) {
+  .card{
+    height: 70px;
+    width: 70px;
   }
+}
+
+@media only screen and (min-width: 415px) {
+  .card{
+    height: 110px;
+    width: 110px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .card{
+    height: 210px;
+    width: 210px;
+  }
+}
+ 
