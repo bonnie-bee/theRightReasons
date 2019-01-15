@@ -10,3 +10,4 @@ const Bachelor = props => (
 );
 
 export default Bachelor;
+ 
