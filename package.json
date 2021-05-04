@@ -7,7 +7,7 @@
     "gh-pages": "^1.0.0"
   },
   "dependencies": {
-    "merge": "^1.2.1",
+    "merge": "^2.1.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-scripts": "^2.1.3"
